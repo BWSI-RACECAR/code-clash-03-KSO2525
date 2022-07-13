@@ -36,25 +36,13 @@ class Solution:
         # TODO: Write code below to return a list with the solution to the prompt
         list1 = str1.split()
         list2 = str2.split()
-        final_list = list1 + list2
-        for i in range(len(final_list)):
-            if i != len(final_list):
-                if final_list[i] in final_list[:i]:
-                    final_list.remove(final_list[i])
-        return final_list
-        '''for i in list1:
-            if i in list2:
-                pass
-            elif i in final_list:
-                pass
-            else:
-                final_list.append(i)
+        final_list = list1
         for x in list2:
             if x in final_list:
                 pass
             else:
                 final_list.append(x)
-        return final_list'''
+        return final_list
 
 def main():
     string1 = input()
