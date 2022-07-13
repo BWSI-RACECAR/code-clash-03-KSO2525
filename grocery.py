@@ -36,11 +36,12 @@ class Solution:
         # TODO: Write code below to return a list with the solution to the prompt
         list1 = str1.split()
         list2 = str2.split()
-        final_list = list1
+        final_list = []
+        for i in list1:
+            if i not in final_list:
+                final_list.append(i)
         for x in list2:
-            if x in final_list:
-                pass
-            else:
+            if x not in final_list:
                 final_list.append(x)
         return final_list
 
